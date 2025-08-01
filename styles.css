@@ -35,6 +35,7 @@ ul {
 
 .call {
     background-color: #3882F6;
+    color: #F9FAF8;
 }
 
 .third {
@@ -63,6 +64,15 @@ footer {
 .image {
     color: #E5E7EB;
     background-color: gray;
+    flex-grow: 1;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroMainer {
+    flex-grow: 2;
 }
 
 .first {
@@ -80,16 +90,24 @@ header {
 }
 
 .first, .second, .third, .fourth, .fifth {
+    display: flex;
     padding-left: 60px;
     padding-right: 60px;
+    gap: 30px;
 }
 
 .heroUnited {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 30px;
 }
 
 .boxes {
     display: flex;
+    gap: 10px;
+    text-wrap: wrap;
 }
 
 .mini   {
@@ -116,4 +134,45 @@ header {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.allCall {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 70px;
+    width: 45%;
+    gap: 15px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.fourth {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.third {
+    margin-top: 30px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.call.first, .call.second {
+    border-radius: 20px;
+    border: #F9FAF8 solid 2px;
+    color: #F9FAF8;
+    height: 4vh;
+    text-align: center;
+    justify-content: center;
 }
